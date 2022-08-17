@@ -1,0 +1,20 @@
+inherited Form1_LgXhdpiTb: TForm1_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited MenuBar: TMenuBar
+    Size.Width = 480.000000000000000000
+  end
+  inherited PnlRodape: TPanel
+    Position.Y = 789.000000000000000000
+    Size.Width = 480.000000000000000000
+  end
+  inherited ltLogin: TLayout
+    Position.Y = 573.000000000000000000
+    Size.Width = 480.000000000000000000
+  end
+  inherited ltLogo: TLayout
+    Size.Width = 480.000000000000000000
+    Size.Height = 523.000000000000000000
+  end
+end
