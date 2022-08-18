@@ -6,20 +6,30 @@ object dm: Tdm
     Params.Strings = (
       'Database=C:\Projetos\AppDogao\DataBase\data.db'
       'DriverID=SQLite')
-    Connected = True
+    LoginPrompt = False
     Left = 360
     Top = 16
   end
   object Query: TFDQuery
     Connection = Connection
+    SQL.Strings = (
+      'select * from usuario')
     Left = 360
     Top = 72
-  end
-  object FDCommand1: TFDCommand
-    Connection = Connection
-    CommandText.Strings = (
-      'select * from usuario')
-    Left = 288
-    Top = 40
+    object Queryidusuario: TFDAutoIncField
+      FieldName = 'idusuario'
+      Origin = 'idusuario'
+      ProviderFlags = [pfInWhere, pfInKey]
+    end
+    object Queryusuario: TStringField
+      FieldName = 'usuario'
+      Origin = 'usuario'
+      Size = 40
+    end
+    object Querysenha: TStringField
+      FieldName = 'senha'
+      Origin = 'senha'
+      Size = 40
+    end
   end
 end
