@@ -43,10 +43,8 @@ implementation
 {$R *.Windows.fmx MSWINDOWS}
 
 procedure TForm1.btnConfirmarClick(Sender: TObject);
-var
-  vUsurio, vSenha: String;
 begin
-  dm.query.open;
+  dm.Query.open;
   dm.Query.Append;
   dm.QueryUsuario.AsString := edtUsuario.Text;
   dm.QuerySenha.AsString := ReturnPasswordSHA1(edtSenha.Text);
