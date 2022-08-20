@@ -6,46 +6,23 @@ object dm: Tdm
     Params.Strings = (
       'Database=C:\Projetos\AppDogao\DataBase\data.db'
       'DriverID=SQLite')
-    Connected = True
     LoginPrompt = False
     AfterConnect = ConnectionAfterConnect
     BeforeConnect = ConnectionBeforeConnect
     Left = 360
     Top = 16
   end
-  object Query: TFDQuery
-    Connection = Connection
-    SQL.Strings = (
-      'select * from usuario')
-    Left = 360
-    Top = 72
-    object Queryidusuario: TFDAutoIncField
-      FieldName = 'idusuario'
-      Origin = 'idusuario'
-      ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
-    end
-    object Queryusuario: TStringField
-      FieldName = 'usuario'
-      Origin = 'usuario'
-      Size = 40
-    end
-    object Querysenha: TStringField
-      FieldName = 'senha'
-      Origin = 'senha'
-      Size = 40
-    end
-  end
   object QueryPessoa: TFDQuery
     Connection = Connection
     SQL.Strings = (
       'select * from pessoa')
     Left = 360
-    Top = 136
+    Top = 128
     object QueryPessoaid: TFDAutoIncField
       FieldName = 'id'
       Origin = 'id'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object QueryPessoanome: TStringField
       FieldName = 'nome'
@@ -113,6 +90,7 @@ object dm: Tdm
       FieldName = 'id'
       Origin = 'id'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object QueryProdutonome: TStringField
       FieldName = 'nome'
@@ -136,6 +114,28 @@ object dm: Tdm
     object QueryProdutoimg_produto: TBlobField
       FieldName = 'img_produto'
       Origin = 'img_produto'
+    end
+  end
+  object QueryUsuario: TFDQuery
+    Connection = Connection
+    SQL.Strings = (
+      'select * from usuario')
+    Left = 360
+    Top = 72
+    object QueryUsuarioid: TFDAutoIncField
+      FieldName = 'id'
+      Origin = 'id'
+      ProviderFlags = [pfInWhere, pfInKey]
+    end
+    object QueryUsuariologin: TStringField
+      FieldName = 'login'
+      Origin = 'login'
+      Size = 40
+    end
+    object QueryUsuariosenha: TStringField
+      FieldName = 'senha'
+      Origin = 'senha'
+      Size = 40
     end
   end
 end

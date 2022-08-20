@@ -44,12 +44,12 @@ implementation
 
 procedure TForm1.btnConfirmarClick(Sender: TObject);
 begin
-  dm.Query.open;
-  dm.Query.Append;
-  dm.QueryUsuario.AsString := edtUsuario.Text;
-  dm.QuerySenha.AsString := ReturnPasswordSHA1(edtSenha.Text);
-  dm.Query.Post;
-  dm.Query.connection.Commit;
+  dm.QueryUsuario.open;
+  dm.QueryUsuario.Append;
+  dm.QueryUsuariologin.AsString := ReturnPasswordSHA1(edtUsuario.Text);
+  dm.QueryUsuariosenha.AsString := edtSenha.Text;
+  dm.QueryUsuario.Post;
+  dm.QueryUsuario.connection.Commit;
   showMessage('usuario cadastrado');
 end;
 

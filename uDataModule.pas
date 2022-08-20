@@ -9,15 +9,11 @@ uses
   FireDAC.Phys.SQLiteDef, FireDAC.Stan.ExprFuncs, FireDAC.Phys.SQLiteWrapper,
   FireDAC.Phys.SQLiteWrapper.Stat, FireDAC.FMXUI.Wait, FireDAC.Stan.Param,
   FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet,
-  FireDAC.Comp.Client;
+  FireDAC.Comp.Client, IOUtils;
 
 type
   Tdm = class(TDataModule)
     Connection: TFDConnection;
-    Query: TFDQuery;
-    Queryidusuario: TFDAutoIncField;
-    Queryusuario: TStringField;
-    Querysenha: TStringField;
     QueryPessoa: TFDQuery;
     QueryProduto: TFDQuery;
     QueryPessoaid: TFDAutoIncField;
@@ -38,6 +34,10 @@ type
     QueryProdutovalor: TBCDField;
     QueryProdutoquantidade: TIntegerField;
     QueryProdutoimg_produto: TBlobField;
+    QueryUsuario: TFDQuery;
+    QueryUsuarioid: TFDAutoIncField;
+    QueryUsuariologin: TStringField;
+    QueryUsuariosenha: TStringField;
     procedure ConnectionBeforeConnect(Sender: TObject);
     procedure ConnectionAfterConnect(Sender: TObject);
   private
@@ -83,17 +83,16 @@ const
 
   cSQLCreateUsuario =
   'create table IF NOT EXISTS Usuario(                  ' +
-  'idusuario integer not null primary key autoincrement ' +
-  'usuario varchar(40), ' +
-  'senha varchar(40))';
+  'id integer not null primary key autoincrement,       ' +
+  'login varchar(40),                                   ' +
+  'senha varchar(40))                                   ';
 begin
   connection.ExecSQL(cSQLCreatePessoa);
   connection.ExecSQL(cSQLCreateProduto);
   connection.ExecSQL(cSQLCreateUsuario);
-  Query.Active := true;
-  QueryPessoa.Active := true;
-  QueryProduto.Active := true;
-
+  //QueryUsuario.Active := true;
+  //QueryPessoa.Active := true;
+  //QueryProduto.Active := true;
 
 end;
 
@@ -103,6 +102,9 @@ var
 begin
 {$IF DEFINED(IOS) or DEFINED(ANDROID)}
   StrPath := System.IOUtils.TPath.Combine(System.IOUtils.TPath.GetDocumentsPath,'data.db');
+{$ENDIF}
+{$IFDEF MSWINDOWS}
+  StrPath := System.IOUtils.TPath.Combine('C:\Projetos\AppDogao\DataBase\','data.db');
 {$ENDIF}
   Connection.Params.Values['UseUnicode'] := 'False';
   Connection.Params.Values['DATABASE'] := strPath;
