@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/08/26 11:04:02.000.377,=D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/26 11:04:15.000.729,D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/08/05 00:49:14.000.716,=D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/08/11 16:13:13.000.523,=D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/08/11 16:13:45.000.888,D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\Unit1.fmx</Transaction>
+    <Transaction>2022/08/11 16:13:45.000.888,D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\Unit1.pas</Transaction>
+    <Transaction>2022/08/11 16:13:52.000.011,D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\AppListaProdutos.dproj</Transaction>
+    <Transaction>2022/08/11 16:14:04.000.851,D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\Unit1.pas=D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\USplash.pas</Transaction>
+    <Transaction>2022/08/11 16:14:04.000.851,D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\Unit1.fmx=D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\USplash.fmx</Transaction>
+    <Transaction>2022/08/11 16:18:58.000.296,=D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\Unit1.pas</Transaction>
+    <Transaction>2022/08/11 16:19:39.000.362,D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\Unit1.pas=D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\UInicial.pas</Transaction>
+    <Transaction>2022/08/11 16:19:39.000.362,D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\Unit1.fmx=D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\UInicial.fmx</Transaction>
+    <Transaction>2022/08/12 00:00:03.000.551,=D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\Unit1.pas</Transaction>
+    <Transaction>2022/08/12 00:00:16.000.683,D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\UDM.pas=D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\Unit1.pas</Transaction>
+    <Transaction>2022/08/12 00:00:16.000.683,D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\UDM.dfm=D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\Unit1.dfm</Transaction>
+    <Transaction>2022/08/18 16:27:57.000.025,=D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\Unit1.pas</Transaction>
+    <Transaction>2022/08/18 16:28:34.000.249,D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\ULista.pas=D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\Unit1.pas</Transaction>
+    <Transaction>2022/08/18 16:28:34.000.249,D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\ULista.fmx=D:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Aula2\Unit1.fmx</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android="" Android64=""/>
+	</ActiveMobileDevice>
+</BorlandProject>
